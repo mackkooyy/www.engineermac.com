@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: engineermac-deployment
+spec:
+  template:
+    metadata:
+      name: engineermac-pod
+      labels:
+        app: engineermac
+    spec:
+      containers:
+        - name: engineermac
+          image: mackkooyy/engineermac:latest
+          ports:
+            - name: http
+              containerPort: 80
+            - name: https
+              containerPort: 443
+  replicas: 3
+  selector:
+    matchLabels:
+      app: engineermac

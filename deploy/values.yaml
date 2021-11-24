@@ -1,0 +1,29 @@
+# # Default values for deploy.
+# # This is a YAML-formatted file.
+# # Declare variables to be passed into your templates.
+
+# # replicaCount is the number of replicas
+# replicaCount: 3
+
+# # application name of the application
+# application:
+#   name: engineermac
+#   port1: 80
+#   port2: 443
+#   port1_name: http
+#   port2_name: https
+#   host1: engineermac.com
+#   host2: www.engineermac.com
+#   ingress: engineermac-ingress
+#   ingress2: www-engineermac-ingress
+
+# # deployment
+# deployment:
+#   name: engineermac-deployment
+#   pod: engineermac-pod
+
+# imageRepository:
+#   name: mackkooyy/engineermac
+
+# service:
+#   name: engineermac-svc
